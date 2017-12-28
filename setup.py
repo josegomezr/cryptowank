@@ -1,17 +1,22 @@
 import setuptools
-from packagename.version import Version
+from cryptowank.version import Version
 
 
-setuptools.setup(name='py-boilerplate',
-                 version=Version('1.0.0').number,
-                 description='Python Package Boilerplate',
-                 long_description=open('README.md').read().strip(),
-                 author='Package Author',
-                 author_email='you@youremail.com',
-                 url='http://path-to-my-packagename',
-                 py_modules=['packagename'],
-                 install_requires=[],
-                 license='MIT License',
-                 zip_safe=False,
-                 keywords='boilerplate package',
-                 classifiers=['Packages', 'Boilerplate'])
+setuptools.setup(name='crypto-wank',
+    version=Version('1.0.0').number,
+    description='A wank for cryptocurrency markets',
+    long_description=open('README.md').read().strip(),
+    author='José Gómez',
+    author_email='1josegomezr@gmail.com',
+    # url='http://path-to-my-packagename',
+    py_modules=['cryptowank'],
+    license='MIT License',
+    zip_safe=False,
+    install_requires=[
+        'requests',
+        'PyYAML'
+    ],
+    keywords='crypto coins market poloniex bitrex currencies',
+    scripts=['bin/cryptowank'],
+    classifiers=['Packages']
+    )

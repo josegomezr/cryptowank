@@ -1,5 +1,2 @@
-# 2016-02-13
+# 2016-12-28
 
-* Update requirements to latest versions
-* Add oss related files
-* Add require.io badge for requirements to README
